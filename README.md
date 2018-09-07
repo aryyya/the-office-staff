@@ -6,39 +6,39 @@ https://the-office-staff.herokuapp.com/
 
 ## API
 
-### Get a list of all staff members:
+### Get a list of all staff member ids:
 
 `GET /api/staff`
 
 #### Example:
 
 ```json
-GET /api/staff
 
 [
-  "michael-scott",
-  "dwight-schrute",
-  "jim-halpert"
+  "dm-scranton-001",
+  "dm-scranton-002",
+  "dm-scranton-003"
 ]
 ```
 
-An array of all staff members is returned.
+An array of all staff member ids is returned.
 
-These names are used in place of the `:name` parameter for all other API requests.
+These ids are used in place of the `:id` parameter for all other API requests.
 
 ---
 
 ### Get data for a staff member:
 
-`GET /api/staff/:name`
+`GET /api/staff/:id`
 
 Example:
 
-```json
-GET /api/staff/michael-scott
+`GET /api/staff/dm-scranton-001`
 
+```json
 {
   "name": "Michael Scott",
+  "id": "dm-scranton-001",
   "aliases": [
     "Michael Scarn",
     "Ping",
@@ -54,13 +54,13 @@ An object with information about the staff member is returned.
 
 ### Get image data for a staff member:
 
-`GET /api/image/:name`
+`GET /api/image/:id`
 
 #### Example:
 
-```json
-GET /api/image/michael-scott
+`GET /api/image/dm-scranton-001`
 
+```json
 {
   "main": "/img/michael-scott.jpg",
   "thumbnail": ""
@@ -73,13 +73,13 @@ An object containing URLs to images of the staff member is returned.
 
 ### Get quote data for a staff member:
 
-`GET /api/quote/:name`
+`GET /api/quote/:id`
 
 #### Example:
 
-```json
-GET /api/quote/michael-scott
+`GET /api/quote/dm-scranton-001`
 
+```json
 [
   "Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me."
 ]

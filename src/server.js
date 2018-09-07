@@ -28,40 +28,64 @@ server.get('/', (_, res) => {
 })
 
 server.get('/api/staff', (_, res) => {
-  const people = Object.keys(staff)
-  res.json(people)
+  const ids = Object.keys(staff)
+  res.json(ids)
 })
 
-server.get('/api/staff/:name', (req, res) => {
-  const { name } = req.params
-  const person = staff[name]
+server.get('/api/staff/:id', (req, res) => {
+  const { id } = req.params
+  const employee = staff[id]
   
-  if (person) {
-    res.json(person)
-  } else {
-    res.status(404).json({ error: `name "${name}" does not exist` })
+  if (employee) {
+    res.json(
+      copyObjectProperties(
+        employee,
+        'name',
+        'id',
+        'aliases',
+        'gender'
+      )
+    )
+  }
+  
+  else {
+    res.status(404).json({ error: `id "${id}" does not exist` })
   }
 })
 
-server.get('/api/quote/:name', (req, res) => {
-  const { name } = req.params
-  const quote = quotes[name]
+server.get('/api/quote/:id', (req, res) => {
+  const { id } = req.params
+  const employee = staff[id]
 
-  if (quote) {
-    res.json(quote)
-  } else {
-    res.status(404).json({ error: `name "${name}" does not exist` })
+  if (employee) {
+    res.json(
+      copyObjectProperties(
+        employee,
+        'quotes'
+      )
+    )
+  }
+  
+  else {
+    res.status(404).json({ error: `id "${id}" does not exist` })
   }
 })
 
-server.get('/api/image/:name', (req, res) => {
-  const { name } = req.params
-  const image = images[name]
+server.get('/api/image/:id', (req, res) => {
+  const { id } = req.params
+  const employee = staff[id]
 
-  if (image) {
-    res.json(image)
-  } else {
-    res.status(404).json({ error: `name "${name}" does not exist` })
+  if (employee) {
+    res.json(
+      copyObjectProperties(
+        employee,
+        'images'
+      )
+    )
+  }
+  
+  else {
+    res.status(404).json({ error: `id "${id}" does not exist` })
   }
 })
 
@@ -74,3 +98,12 @@ server.get('*', (_, res) => {
 server.listen(port, () => {
   console.log(`The server is listening for requests on port ${port}.`)
 })
+
+// utility
+
+const copyObjectProperties = (object, ...properties) => (
+  properties.reduce((newObject, property) => {
+    newObject[property] = object[property]
+    return newObject
+  }, {})
+)
