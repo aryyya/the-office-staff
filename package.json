@@ -1,14 +1,14 @@
 {
-  "name": "the-office-staff-api",
+  "name": "the-office-staff",
   "version": "1.0.0",
-  "description": "",
+  "description": "A server created for educational purposes, to teach the fundamentals of web requests.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js"
   },
-  "author": "",
+  "author": "aryyya",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3"
