@@ -51,3 +51,23 @@ buttonElement.addEventListener('click', logClick)
 It is called this because it is a piece of code that is passed to another piece of code that will "call back" to it at some point in the future. In this case, it will call back to it when the button is clicked.
 
 ### More Callbacks
+
+You can use register a callback function to execute after a certain amount of time has elapsed:
+
+```javascript
+setTimeout(() => {
+  console.log('Hello, world!')
+}, 1000)
+```
+
+`'Hello, world!' will be shown on the console in the event that 1000 milliseconds have passed. Again, to put it simply, "in one second, run this function".
+
+And again, since the first argument `() => {}` is a function, it could also be written like this:
+
+```javascript
+const greetWorld = () => {
+  console.log('Hello, world!')
+}
+
+setTimeout(greetWorld, 1000)
+```
