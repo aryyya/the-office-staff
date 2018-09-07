@@ -62,7 +62,7 @@ An object with information about the staff member is returned.
 
 ```json
 {
-  "main": "/img/michael-scott.jpg",
+  "large": "/img/dm-scranton-001-large.jpg",
   "thumbnail": ""
 }
 ```

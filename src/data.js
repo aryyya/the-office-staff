@@ -12,7 +12,7 @@ const staff = {
       `Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me.`
     ],
     images: {
-      main: '/img/.jpg',
+      large: '/img/dm-scranton-001-large.jpg',
       thumbnail: ''
     }
   },
@@ -29,7 +29,7 @@ const staff = {
       `Nothing stresses me out. Except having to seek the approval of my inferiors.`
     ],
     images: {
-      main: '/img/dwight-schrute.jpg',
+      large: '/img/dm-scranton-002-large.jpg',
       thumbnail: ''
     }
   },
@@ -46,7 +46,7 @@ const staff = {
       `If I left, what would I do with all this useless information in my head?`
     ],
     images: {
-      main: '/img/jim-halpert.jpg',
+      large: '/img/dm-scranton-003-large.jpg',
       thumbnail: ''
     }
   },
@@ -63,7 +63,7 @@ const staff = {
       `Once every hour, someone is involved in an internet scam. That man is Michael Scott. He's supporting about twenty Nigerian princesses.`      
     ],
     images: {
-      main: '/img/pam-beesly.jpg',
+      large: '/img/dm-scranton-004-large.jpg',
       thumbnail: ''
     }
   },
@@ -80,7 +80,7 @@ const staff = {
       `I wish there was a way to know you're in "the good old days" before you've actually left them. Someone should write a song about that.`   
     ],
     images: {
-      main: '/img/andy-bernard.jpg',
+      large: '/img/dm-scranton-005-large.jpg',
       thumbnail: ''
     }
   },
@@ -97,7 +97,7 @@ const staff = {
       `I have very little patience for stupidity.`
     ],
     images: {
-      main: '/img/kevin-malone.jpg',
+      large: '/img/dm-scranton-006-large.jpg',
       thumbnail: ''
     }
   },
@@ -113,7 +113,7 @@ const staff = {
       `I find the mystery genre disgusting. I hate being titillated.`
     ],
     images: {
-      main: '/img/angela-martin.jpg',
+      large: '/img/dm-scranton-007-large.jpg',
       thumbnail: ''
     }
   },
@@ -128,7 +128,7 @@ const staff = {
       `And I will have a waffle with your mapliest syrup!`  
     ],
     images: {
-      main: '/img/erin-hannon.jpg',
+      large: '/img/dm-scranton-008-large.jpg',
       thumbnail: ''
     }
   },
@@ -144,7 +144,7 @@ const staff = {
       `Angela's engaged to a gay man. As a gay man, I'm horrified. As a friend of Angela's, horrified. As a lover of elegant weddings, I'm a little excited.`
     ],
     images: {
-      main: '/img/oscar-martinez.jpg',
+      large: '/img/dm-scranton-009-large.jpg',
       thumbnail: ''
     }
   },
@@ -159,7 +159,7 @@ const staff = {
       `It's not real until your wife is on board.`
     ],
     images: {
-      main: '/img/darryl-philbin.jpg',
+      large: '/img/dm-scranton-010-large.jpg',
       thumbnail: ''
     }
   },
@@ -176,7 +176,7 @@ const staff = {
       `I'd like to make a toast. To the troops...all the troops...both sides.`
     ],
     images: {
-      main: '/img/ryan-howard.jpg',
+      large: '/img/dm-scranton-011-large.jpg',
       thumbnail: ''
     }
   },
@@ -191,7 +191,7 @@ const staff = {
       `I'm glad Michael's getting help. He has a lot of issues, and he's stupid.`
     ],
     images: {
-      main: '/img/phyllis-lapin.jpg',
+      large: '/img/dm-scranton-012-large.jpg',
       thumbnail: ''
     }
   },
@@ -206,7 +206,7 @@ const staff = {
       `I don't talk trash, I talk smack. They're totally different.`
     ],
     images: {
-      main: '/img/kelly-kapoor.jpg',
+      large: '/img/dm-scranton-013-large.jpg',
       thumbnail: ''
     }
   },
@@ -223,7 +223,7 @@ const staff = {
       `Don't tell me how to do my business.`
     ],
     images: {
-      main: '/img/stanley-hudson.jpg',
+      large: '/img/dm-scranton-014-large.jpg',
       thumbnail: ''
     }
   },
@@ -238,7 +238,7 @@ const staff = {
       `Like my mom always says, "talk classy, act nasty".`
     ],
     images: {
-      main: '/img/meridith-palmer.jpg',
+      large: '/img/dm-scranton-015-large.jpg',
       thumbnail: ''
     }
   },
@@ -254,7 +254,7 @@ const staff = {
       `Just pretend like we're talking until the cops leave.`
     ],
     images: {
-      main: '/img/creed-bratton.jpg',
+      large: '/img/dm-scranton-016-large.jpg',
       thumbnail: ''
     }
   },
@@ -269,7 +269,7 @@ const staff = {
       `I have six roommates, which are better than friends because they have to give you one month's notice before they leave.`
     ],
     images: {
-      main: '/img/toby-flenderson.jpg',
+      large: '/img/dm-scranton-017-large.jpg',
       thumbnail: ''
     }
   }
