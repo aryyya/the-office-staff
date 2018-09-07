@@ -1,8 +1,24 @@
 # Tutorial 01 - Callbacks
 
-## Events
+## The Abstract
 
-Sometimes you want to run some code when some *thing* happens. That thing is called an *event*.
+### Last Will and Testament
+
+A *will* is a legal document that describes how a person wishes their property to be distributed after they die.
+
+The author of a will is known as the *testator*. The person who carries out the instructions in the will is known as the *executor*.
+
+The will is only executed in the event of the author's death, not a moment before. It's a detailed plan for a grim future.
+
+### A Will in Software
+
+Luckily, we don't have to die to tell the computer to execute a series of steps when a certain event takes place!
+
+## The Technical
+
+### Basic Callbacks
+
+Sometimes you want to run some code when some *thing* happens. That thing is called... An *event*.
 
 Inside a web browser, those events can be user interactions like clicks, hovers, scrolls, etc.
 
@@ -33,3 +49,5 @@ buttonElement.addEventListener('click', logClick)
 `logClick` is known as a *callback function*.
 
 It is called this because it is a piece of code that is passed to another piece of code that will "call back" to it at some point in the future. In this case, it will call back to it when the button is clicked.
+
+### More Callbacks
