@@ -27,7 +27,7 @@ These ids are used in place of the `:id` parameter for all other API requests.
 
 ---
 
-### Get data for a staff member:
+### Get information for a staff member:
 
 `GET /api/staff/:id`
 
@@ -52,7 +52,7 @@ An object with information about the staff member is returned.
 
 ---
 
-### Get image data for a staff member:
+### Get images for a staff member:
 
 `GET /api/image/:id`
 
@@ -71,7 +71,7 @@ An object containing URLs to images of the staff member is returned.
 
 ---
 
-### Get quote data for a staff member:
+### Get quotes for a staff member:
 
 `GET /api/quote/:id`
 
