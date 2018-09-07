@@ -33,7 +33,7 @@ server.get('/api/staff/:name', (req, res) => {
   if (person) {
     res.json(person)
   } else {
-    res.json({ error: `name "${name}" does not exist` })
+    res.status(404).json({ error: `name "${name}" does not exist` })
   }
 })
 
@@ -44,7 +44,7 @@ server.get('/api/quote/:name', (req, res) => {
   if (quote) {
     res.json(quote)
   } else {
-    res.json({ error: `name "${name}" does not exist` })
+    res.status(404).json({ error: `name "${name}" does not exist` })
   }
 })
 
@@ -55,12 +55,12 @@ server.get('/api/image/:name', (req, res) => {
   if (image) {
     res.json(image)
   } else {
-    res.json({ error: `name "${name}" does not exist` })
+    res.status(404).json({ error: `name "${name}" does not exist` })
   }
 })
 
 server.get('*', (_, res) => {
-  res.json({ error: `no api endpoint exists here` })
+  res.status(404).json({ error: `no api endpoint exists here` })
 })
 
 // start
