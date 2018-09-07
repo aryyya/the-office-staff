@@ -67,6 +67,8 @@ GET /api/image/michael-scott
 
 An object containing URLs to images of the staff member is returned.
 
+---
+
 ### Get quote data for a staff member:
 
 `GET /api/quote/:name`
@@ -79,6 +81,6 @@ GET /api/quote/michael-scott
 [
   "Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me."
 ]
+```
 
 An array of quotes from the staff member is returned.
-```
