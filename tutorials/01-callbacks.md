@@ -60,7 +60,7 @@ setTimeout(() => {
 }, 1000)
 ```
 
-`'Hello, world!' will be shown on the console in the event that 1000 milliseconds have passed. Again, to put it simply, "in one second, run this function".
+`'Hello, world!'` will be shown on the console in the event that 1000 milliseconds have passed. Again, to put it simply, "in one second, run this function".
 
 And again, since the first argument `() => {}` is a function, it could also be written like this:
 
