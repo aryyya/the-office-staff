@@ -15,6 +15,12 @@ server.use(
   express.static('public')
 )
 
+server.use((_, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header('Access-Control-Allow-Headers', 'X-Requested-With')
+  next()
+})
+
 // routes
 
 server.get('/', (_, res) => {
