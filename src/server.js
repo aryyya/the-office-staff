@@ -1,9 +1,21 @@
+// modules
+
 const express = require('express')
 const path = require('path')
 const { staff, quotes, images } = require('./data')
 
+// server
+
 const server = express()
 const port = process.env.PORT || 3001
+
+// middleware
+
+server.use(
+  express.static('public')
+)
+
+// routes
 
 server.get('/', (_, res) => {
   res.sendFile(path.resolve(__dirname, 'index.html'))
@@ -50,6 +62,8 @@ server.get('/api/image/:name', (req, res) => {
 server.get('*', (_, res) => {
   res.json({ error: `no api endpoint exists here` })
 })
+
+// start
 
 server.listen(port, () => {
   console.log(`The server is listening for requests on port ${port}.`)
