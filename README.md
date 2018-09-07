@@ -4,6 +4,18 @@ A server created for educational purposes, to teach the fundamentals of web requ
 
 https://the-office-staff.herokuapp.com/
 
+## What is this?
+
+This is a server that you can make requests to that will respond with information about the staff members from [The Office (US)](https://en.wikipedia.org/wiki/The_Office_(U.S._TV_series)).
+
+The information includes their names, aliases, photos, quotes, and more! Everything is organized in an easily consumable API, perfect for creating a frontend application with.
+
+## Tutorials
+
+Various tutorials about JavaScript and development that use the API as a teaching tool will be linked here.
+
+- [Tutorial 1: Callbacks](./tutorials/01-callbacks.md)
+
 ## API
 
 ### Get a list of all staff member ids:
