@@ -52,7 +52,7 @@ It is called this because it is a piece of code that is passed to another piece 
 
 ### More Callbacks
 
-You can use register a callback function to execute after a certain amount of time has elapsed:
+You can register a callback function to execute after a certain amount of time has elapsed:
 
 ```javascript
 setTimeout(() => {
